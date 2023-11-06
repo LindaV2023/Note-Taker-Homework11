@@ -12,14 +12,20 @@
       integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/Develop/public/assets/css/styles.css" />
   </head>
 
   <body>
     <nav class="navbar bg-info">
       <a class="navbar-brand text-light p-3" href="/">Note Taker </a>
+
       <div class="icons">
-        <button type="button" class="btn btn-outline-light btn-sm save-note">
+        <i class="fas fa-save text-light save-note"></i>
+        <i class="fas fa-pen text-light new-note"></i>
+      </div>
+      </nav>
+
+        <!-- <button type="button" class="btn btn-outline-light btn-sm save-note">
           <span class="fas fa-save"></span>
           <span>Save Note</span>
         </button>
@@ -32,15 +38,18 @@
           <span>Clear Form</span>
         </button>
       </div>
-    </nav>
+    </nav> -->
     <div class="container-fluid">
       <div class="row">
         <div class="col-4 list-container" id="list-container">
           <div class="card">
+
+      
             <ul class="list-group" id="list-group"></ul>
           </div>
         </div>
         <div class="col-8">
+
           <form class="note-form">
             <input
             class="note-title"
@@ -53,6 +62,8 @@
         </div>
       </div>
     </div>
-    <script src="/assets/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuidv4.min.js"></script>
+    <script src="/Develop/public/assets/js/index.js"></script>
+    <script src="/Develop/public/assets/js/notes.js"></script>
   </body>
 </html>
